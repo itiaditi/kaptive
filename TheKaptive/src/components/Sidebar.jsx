@@ -95,16 +95,17 @@ const Sidebar = () => {
           </li>
           <li
             className={`hover:bg-gray-800 cursor-pointer sm:justify-start md:justify-center lg:justify-start px-4 h-12 flex items-center justify-center ${activeLink === 'reports' ? 'bg-gray-800 border-l-4 border-white' : ''}`}
-            onClick={() => handleNavigation('/reports', 'reports')}
+            onClick={() => handleNavigation('/update', 'reports')}
           >
             <TbReportSearch style={{ color: 'white' }} />
-            <span className={`ml-3 hidden lg:block font-semibold tracking-wide transition-colors ${activeLink === 'reports' ? 'text-white' : 'text-gray-400'}`}>
+            <span className={`ml-3 hidden lg:block font-semibold tracking-wide transition-colors ${activeLink === 'reports' ? 'text-white' : 'text-gray-400'}`}
+           >
               Reports
             </span>
           </li>
           <li
             className={`hover:bg-gray-800 cursor-pointer sm:justify-start md:justify-center lg:justify-start px-4 h-12 flex items-center justify-center ${activeLink === 'forecast' ? 'bg-gray-800 border-l-4 border-white' : ''}`}
-            onClick={() => handleNavigation('/forecast', 'forecast')}
+            onClick={() => handleNavigation('/update', 'forecast')}
           >
             <BiSolidBinoculars style={{ color: 'white' }} />
             <span className={`ml-3 hidden lg:block font-semibold tracking-wide transition-colors ${activeLink === 'forecast' ? 'text-white' : 'text-gray-400'}`}>
@@ -113,11 +114,11 @@ const Sidebar = () => {
           </li> 
           <div className="mb-0">
           <li
-            className={`hover:bg-gray-800 cursor-pointer sm:justify-start md:justify-center lg:justify-start px-4 h-12 flex items-center justify-center ${activeLink === 'reports' ? 'bg-gray-800 border-l-4 border-white' : ''}`}
-            onClick={() => handleNavigation('/reports', 'reports')}
+            className={`hover:bg-gray-800 cursor-pointer sm:justify-start md:justify-center lg:justify-start px-4 h-12 flex items-center justify-center ${activeLink === 'name' ? 'bg-gray-800 border-l-4 border-white' : ''}`}
+            
           >
           
-            <span className={`ml-3 hidden lg:block font-semibold tracking-wide transition-colors ${activeLink === 'reports' ? 'text-white' : 'text-gray-400'}`}>
+            <span className={`ml-3 hidden lg:block font-semibold tracking-wide transition-colors ${activeLink === 'name' ? 'text-white' : 'text-gray-400'}`}>
               {isLoggedIn.name}
             </span>
           </li>
