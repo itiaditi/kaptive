@@ -1,6 +1,5 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
-import AllRoutes from './components/AllRoutes';
 
 function App() {
   return (

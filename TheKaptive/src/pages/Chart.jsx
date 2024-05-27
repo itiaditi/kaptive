@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'react-google-charts';
 import {totalRevenue, totalCOGS, grossProfit} from '../data'
-import TableComponent from './TableComponent';
+
 import { TopOptions } from './Dashboard';
 function ChartComponent() {
   const [data, setData] = useState([

@@ -21,7 +21,7 @@ const SignUp = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://universitydashboard-1.onrender.com/user/register', {
+      const response = await fetch('https://kaptive-e6qa.onrender.com/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

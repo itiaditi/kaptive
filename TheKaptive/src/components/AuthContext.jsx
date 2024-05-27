@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { createContext } from "react";
-import axios from "axios";
+
  
   const userRes={
     isAuth:false,
@@ -22,7 +22,7 @@ export const AuthContextProvider=({children})=>{
       const handleLogout = async () => {
         try {
           const token = localStorage.getItem("accessToken");
-          const res = await axios.get("https://universitydashboard-1.onrender.com/users/logout", {
+          const res = await user.get("https://kaptive-e6qa.onrender.com/user/logout", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

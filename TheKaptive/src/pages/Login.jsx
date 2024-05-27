@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, {  useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-import { AuthContext, useAuth } from '../components/AuthContext';
+import {  useAuth } from '../components/AuthContext';
 
 
 const Login = () => {
@@ -20,7 +20,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://universitydashboard-1.onrender.com/user/login', {
+      const response = await fetch('https://kaptive-e6qa.onrender.com/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

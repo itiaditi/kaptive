@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Chart from 'react-google-charts'
 import ChartComponent from './Chart'
 import TableComponent from './TableComponent'
 import { FaBars } from 'react-icons/fa';
